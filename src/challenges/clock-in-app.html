@@ -1,0 +1,63 @@
+<!DOCTYPE html> 
+<html lang="en">
+  <head>
+    <title>Clock In App</title>
+    <link rel="stylesheet" href="../styles/output.css">
+  </head>
+  <body class="min-h-screen bg-purple-500 flex items-center justify-center flex-wrap">
+    <div class="bg-violet-900 h-[90vh] min-h-96 md:h-[70vh] aspect-[55/100] rounded-2xl m-6 md:m-12 overflow-hidden shadow-2xl shadow-purple-400">
+      <nav class="bg-yellow-400 shadow-sm shadow-yellow-200 flex items-center justify-between pt-3 px-8 h-[10%]">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" height="55%" width="auto" class="fill-violet-800 hover:fill-violet-600 hover:cursor-pointer transition ease-in duration-300">
+            <path d="M760-200v-160q0-50-35-85t-85-35H273l144 144-57 56-240-240 240-240 57 56-144 144h367q83 0 141.5 58.5T840-360v160h-80Z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" height="55%" width="auto" class="fill-violet-800 hover:fill-violet-600  hover:cursor-pointer transition ease-in duration-300">
+            <path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/>
+          </svg>
+      </nav>
+        <div class="h-[90%] flex flex-col items-center">
+        <h2 class="text-yellow-400 text-center font-semibold pt-12 pb-4"> YOUR HOURS </h2>
+        <hr class="w-[50%] border-1 border-yellow-400">
+          <svg xmlns="http://www.w3.org/2000/svg" height="auto" class="fill-yellow-400/70 pt-6" viewBox="0 -960 960 960" width="70%">
+            <path d="m785-289-58-58q16-29 24.5-63t8.5-70q0-117-81.5-198.5T480-760q-35 0-68.5 8.5T348-726l-59-59q43-26 91.5-40.5T480-840q75 0 140.5 28.5t114 77q48.5 48.5 77 114T840-480q0 53-14.5 101T785-289ZM520-554l-80-80v-46h80v126ZM792-56 672-176q-42 26-90 41t-102 15q-138 0-240.5-91.5T122-440h82q14 104 92.5 172T480-200q37 0 70.5-8.5T614-234L288-560H120v-168l-64-64 56-56 736 736-56 56Z"/>
+          </svg>
+        <h3 class="text-yellow-400/70 text-center font-semibold pt-2 pb-4"> You haven't logged any hours yet </h3>
+        <svg xmlns="http://www.w3.org/2000/svg" class="mb-4 mr-4 self-end mt-auto hover:cursor-pointer bg-yellow-400/70 fill-violet-900 shadow shadow-yellow-200/80 hover:shadow-l hover:shadow-yellow-200/80 text-center rounded-[50%]" height="auto" viewBox="0 -960 960 960" width="20%">
+          <path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/>
+        </svg>
+        </div>
+    </div>
+    <div class="bg-violet-900 h-[90vh] min-h-96 md:h-[70vh] aspect-[55/100] rounded-2xl m-6 md:m-12 overflow-hidden shadow-2xl shadow-purple-400">
+      <nav class="bg-yellow-400 shadow-sm shadow-yellow-200 flex items-center justify-between pt-3 px-8 h-[10%]">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" height="55%" width="auto" class="fill-violet-800 hover:fill-violet-600 hover:cursor-pointer transition ease-in duration-300">
+            <path d="M760-200v-160q0-50-35-85t-85-35H273l144 144-57 56-240-240 240-240 57 56-144 144h367q83 0 141.5 58.5T840-360v160h-80Z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" height="55%" width="auto" class="fill-violet-800 hover:fill-violet-600  hover:cursor-pointer transition ease-in duration-300">
+            <path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/>
+          </svg>
+      </nav>
+        <div class="h-[100%] flex flex-col items-center">
+        <h2 class="text-yellow-400 text-center font-semibold pt-12 pb-4"> YOUR HOURS </h2>
+        <hr class="w-[50%] border-1 border-yellow-400">
+        <div class="bg-yellow-400 text-purple-800 w-[80%] flex flex-col space-y-2 items-center justify-center mt-8 p-4 rounded">
+          <label class="font-semibold" for="hours">Select hour type</label>
+<select class="rounded bg-yellow-300/60 p-2 text-center" id="hours" name="hours">
+  <option value="overtime">Overtime Hours</option>
+  <option value="flex">Flex Hours</option>
+  <option value="standard">Standard Hours</option>
+  <option value="public">Public Holiday Hours</option>
+</select>
+<div class="flex space-x-4 text-center justify-center items-center *:cursor-pointer" >
+<span class="bg-purple-300 rounded text-lg px-2 min-h-4 min-w-4">0</span>
+<span class="bg-purple-300 rounded text-lg px-2 min-h-4 min-w-4">+</span>
+<span class="bg-purple-300 rounded text-lg px-2 min-h-4 min-w-4">-</span>
+</div>
+<div class="flex space-x-6">
+  <button class="px-6 py-2 cursor-pointer">Cancel</button>
+  <button class="bg-purple-300 rounded px-6 py-2 cursor-pointer">Save</button>
+  
+</div> 
+        </div>
+        </div>
+    </div>
+  </body>
+</html>
