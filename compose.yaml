@@ -1,0 +1,7 @@
+services:
+  dev:
+    build: . 
+    ports: 
+      - 8080:1234
+    volumes:
+      - ./src:/app
