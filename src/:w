@@ -1,2 +1,0 @@
-      <input class="flex justify-center items-center bg-slate-800 border-purple-800 border-2 rounded" type="email" placeholder="enter email address"/>
-      <button class=" bg-purple-800 text-slate-200 rounded h-12 w-48">Ok</button>
