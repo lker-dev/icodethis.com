@@ -7,7 +7,53 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />   
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="bg-slate-900 text-slate-100 min-h-screen flex items-center justify-center">
-    <div class="bg-slate-800 rounded"> <h1>Hello</h1></div>
+  <body class="relative md:space-x-12 mt-3 lg:space-x-24 bg-slate-900 text-slate-200 min-h-screen flex items-center justify-center flex-wrap">
+    <div class="bg-slate-800 w-96 p-6 flex flex-col space-y-2"> 
+      <h1>Hi</h1>
+      <h2>One of our consultants will assist you as soon as they can</h2>
+      <form>
+        <label for="name" class="block mt-2">Name</label>
+        <input type="text" id="name"
+          class="appearance-none bg-slate-800 border-purple-800 border-2 rounded"/>
+        <label for="email" class="block mt-2">Email</label>
+        <input type="email" id="email"
+          class="appearance-none bg-slate-800 border-purple-800 border-2 rounded"/>
+        <label for="phone" class="block mt-2">Phone (optional)</label>
+        <input type="text" id="phone"
+          class="appearance-none bg-slate-800 border-purple-800 border-2 rounded"/>
+        <label for="message" class="block pt-2">Message</label>
+        <textarea type="text" id="message"
+                              class="h-48 appearance-none bg-slate-800 border-purple-800 border-2 rounded">
+        </textarea>
+      </form>
+      <button class=" bg-purple-800 text-slate-200 mx-auto rounded h-12 w-48">Start chat</button>
+    </div>
+    <div class="flex flex-col space-y-6 pt-6">
+    
+      <div class="bg-slate-800 p-4 w-96 flex space-x-3 items-center justify-center md:translate-x-16 md:-translate-y-16"> 
+      <span class="text-yellow-400 text-6xl material-symbols-outlined">
+        security
+      </span>
+      <div>
+      <div>
+      <h2>Show others that you are safe</h1>
+      <p>If you approve your profile with BankID, you are percieved as a safer person to trade with.</p>
+      </div>
+      <button class="mt-6 bg-yellow-400 text-slate-800 mx-auto rounded h-8 w-48">Get started</button>
+      </div>
+    </div>
+
+    
+    <div class="bg-slate-800 w-96 p-8 *:pt-4 flex flex-col"> 
+      <span class="text-purple-800 text-6xl material-symbols-outlined">
+        drafts
+      </span>
+      <h2>Subscrible to the newsletter</h2>
+      <input class="bg-slate-800 border-purple-800 border-2 rounded" type="email" placeholder="enter email address"/>
+      <button class="mt-2 bg-purple-800 text-slate-200 rounded h-12 w-48">Ok</button>
+    </div>
+
+    </div>
+  
   </body>
 </html>

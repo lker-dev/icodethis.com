@@ -4,7 +4,7 @@ WORKDIR /app
 
 RUN npm install --save-dev parcel
 
-COPY src .
+COPY . .
 
-ENTRYPOINT ["parcel", "index.html"]
+ENTRYPOINT ["parcel", "src/index.html"]
 
