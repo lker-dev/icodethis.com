@@ -1,7 +1,7 @@
 services:
   dev:
-    build: ./local.Dockerfile 
+    build: . 
     ports: 
       - 1234:1234
     volumes:
-      - ./src:/app
+      - .:/app
