@@ -52,7 +52,7 @@ function CardOptions({symbol}) {
 function Card() {
   return(
     <div className="space-y-4 bg-yellow-300 border-purple-900 rounded border-4 text-purple-800 p-4 shadow-lg shadow-purple-500 flex flex-col justify-center items-center">
-      <img src="https://raw.githubusercontent.com/lker-dev/icodethis.com/main/src/assets/jonathanwalker.jpg" className="rounded-full bg-white border-2 border-purple-800 aspect-square w-32"/>
+      <img src="https://raw.githubusercontent.com/walker-style/icodethis.com/main/src/assets/jonathanwalker.jpg" className="rounded-full bg-white border-2 border-purple-800 aspect-square w-32"/>
       <h1 className="font-semibold text-lg">Jonathan Walker</h1>
       <p className="italic">Aspiring to Inspire. Inspired to Aspire</p>
       <div className="flex space-x-8 pt-8">
